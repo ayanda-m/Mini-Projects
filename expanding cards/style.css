@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+}
+
+.container div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: ghostwhite;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.5s ease-in-out;
+}
+
+.container .active {
+    flex: 5;
+}
+
+.container .active h2 {
+    opacity: 1;
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    margin: 0;
+    opacity: 0;
+}
+
+@media (max-width:480px) {
+    .container {
+        width: 100vw;
+    }
+
+}
+
+.capeTown {
+
+    background-image: url(https://images.unsplash.com/photo-1585061528750-3baca2cb6a10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+.jozi {
+    background-image: url(https://images.unsplash.com/photo-1577948000111-9c970dfe3743?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+}
+
+.pretoria {
+    background-image: url(https://images.unsplash.com/photo-1658487469403-794c5d2caa66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=80);
+}
+
+.durban {
+    background-image: url(https://images.unsplash.com/photo-1550761717-d03b44d9cb33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+}
+
+.blom {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bloemfontein%2C_Free_State%2C_South_Africa_%2820349855518%29.jpg/1024px-Bloemfontein%2C_Free_State%2C_South_Africa_%2820349855518%29.jpg);
+}
